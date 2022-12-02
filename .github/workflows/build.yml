@@ -19,8 +19,8 @@ jobs:
 
     - name: Build
       run: |
-        mvn -Dhadoop.profile=3.0 -Dhadoop-three.version=3.3.3 -DskipTests install
-        mvn -Dhadoop.profile=3.0 -Dhadoop-three.version=3.3.3 -DskipTests package assembly:single
+        mvn -Dhadoop.profile=3.0 -Dhadoop-three.version=3.3.4 -DskipTests install
+        mvn -Dhadoop.profile=3.0 -Dhadoop-three.version=3.3.4 -DskipTests package assembly:single
 
     - name: Release zips
       uses: softprops/action-gh-release@v1
